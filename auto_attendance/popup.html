@@ -1,0 +1,75 @@
+<!--pretty much useless till now
+style.js has code that can be used to add toggle and send variables
+style.css is the stlesheet pretty straight forward-->
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stye.css">
+
+
+</head>
+
+<body>
+
+    <script src="style.js"></script>
+    <center>
+        <div class="mainouter"><br>
+            <h2>Toggle switch to start/stop extension</h2>
+            <i><b>please enter values in all the fields for this to work properly.</b><br><br>
+            </i>
+            <form>
+                <label class="switch">
+                    <input type="checkbox" id="cheo">
+                    <span class="slider round"></span>
+                </label>
+
+                <br>
+                <hr><br>
+                <table id="myTable" border="1">
+                    <tr>
+                        <th>name</th>
+                        <th>start time</th>
+                        <th>end time</th>
+                        <th>meet link</th>
+                        <th>select</th>
+                    </tr>
+                </table>
+                <br>
+                <b><label for="nameinfo">name:</label></b>
+                <input type="text" id="nameinfo" name="nameinfo" autocomplete="off" disabled value=""><br>
+                <br>
+                <b><label for="timeinfo">start time:</label></b>
+                <input type="time" id="timeinfo" name="timeinfo" autocomplete="off" disabled value=""><br>
+                <br><b><label for="timeinfo2">end time:</label></b><input type="time" id="timeinfo2" name="timeinfo2"
+                    autocomplete="off" disabled value=""><br><br>
+                <b><label for="linkinfo">link:</label></b>
+                <input type="text" id="linkinfo" name="linkinfo" autocomplete="off" disabled value=""><br><br><br><br>
+                <div class="welp"><button id="addro" class="butn2" disabled><b>ADD INFO</b></button>
+                    <button id="addro2" class="butn3" disabled><b>clear all</b></button>
+                    <button id="addro3" class="butn4" disabled><b>clear specified</b></button>
+                </div><br><br><br><br>
+                <hr><br>
+
+                <b><label for="time">how many minutes before the end of meet do you want to leave: </label></b><br><br>
+
+                <input type="number" id="time" name="time" autocomplete="off" disabled value=0>
+
+                <br><br>
+
+                <b><label for="time2">how many minutes to wait before joining next meet<br>(keep the value more than
+                        that of the above field):</label></b> <br><br>
+
+                <input type="number" id="time2" name="time2" autocomplete="off" disabled value=8>
+
+                <br><br>
+                <hr><br><br>
+                <button id="butn" disabled class="butn"><b>UPDATE</b></button><br>
+                <i><br><i><b>(last time's variables are mostly saved)</i> </br>
+                    <b>always make sure that you are logged into your google account while using
+                        this.</b></i><br>
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
